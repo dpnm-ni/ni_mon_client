@@ -1,6 +1,6 @@
 # ni_mon_client.DefaultApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_mesurement**
-> MonitoringEntry get_mesurement(id, mesurement_type, start_time, end_time)
+> list[MonitoringEntry] get_mesurement(id, mesurement_type, start_time, end_time)
 
 get mesurement value
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MonitoringEntry**](MonitoringEntry.md)
+[**list[MonitoringEntry]**](MonitoringEntry.md)
 
 ### Authorization
 
