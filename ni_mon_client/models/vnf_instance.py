@@ -34,33 +34,33 @@ class VNFInstance(object):
     """
     swagger_types = {
         'id': 'str',
-        'type': 'VNFFlavor',
-        'node_id': 'str',
+        'flavor_type': 'VNFFlavor',
+        'node_name': 'str',
         'ip': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'type': 'type',
-        'node_id': 'node_id',
+        'flavor_type': 'flavor_type',
+        'node_name': 'node_name',
         'ip': 'ip'
     }
 
-    def __init__(self, id=None, type=None, node_id=None, ip=None):  # noqa: E501
+    def __init__(self, id=None, flavor_type=None, node_name=None, ip=None):  # noqa: E501
         """VNFInstance - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
-        self._type = None
-        self._node_id = None
+        self._flavor_type = None
+        self._node_name = None
         self._ip = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if type is not None:
-            self.type = type
-        if node_id is not None:
-            self.node_id = node_id
+        if flavor_type is not None:
+            self.flavor_type = flavor_type
+        if node_name is not None:
+            self.node_name = node_name
         if ip is not None:
             self.ip = ip
 
@@ -86,46 +86,46 @@ class VNFInstance(object):
         self._id = id
 
     @property
-    def type(self):
-        """Gets the type of this VNFInstance.  # noqa: E501
+    def flavor_type(self):
+        """Gets the flavor_type of this VNFInstance.  # noqa: E501
 
 
-        :return: The type of this VNFInstance.  # noqa: E501
+        :return: The flavor_type of this VNFInstance.  # noqa: E501
         :rtype: VNFFlavor
         """
-        return self._type
+        return self._flavor_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this VNFInstance.
+    @flavor_type.setter
+    def flavor_type(self, flavor_type):
+        """Sets the flavor_type of this VNFInstance.
 
 
-        :param type: The type of this VNFInstance.  # noqa: E501
+        :param flavor_type: The flavor_type of this VNFInstance.  # noqa: E501
         :type: VNFFlavor
         """
 
-        self._type = type
+        self._flavor_type = flavor_type
 
     @property
-    def node_id(self):
-        """Gets the node_id of this VNFInstance.  # noqa: E501
+    def node_name(self):
+        """Gets the node_name of this VNFInstance.  # noqa: E501
 
 
-        :return: The node_id of this VNFInstance.  # noqa: E501
+        :return: The node_name of this VNFInstance.  # noqa: E501
         :rtype: str
         """
-        return self._node_id
+        return self._node_name
 
-    @node_id.setter
-    def node_id(self, node_id):
-        """Sets the node_id of this VNFInstance.
+    @node_name.setter
+    def node_name(self, node_name):
+        """Sets the node_name of this VNFInstance.
 
 
-        :param node_id: The node_id of this VNFInstance.  # noqa: E501
+        :param node_name: The node_name of this VNFInstance.  # noqa: E501
         :type: str
         """
 
-        self._node_id = node_id
+        self._node_name = node_name
 
     @property
     def ip(self):

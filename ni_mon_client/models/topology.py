@@ -31,8 +31,8 @@ class Topology(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'node_list': 'list[int]',
-        'edge_list': 'list[int]'
+        'node_list': 'list[str]',
+        'edge_list': 'list[str]'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class Topology(object):
 
 
         :return: The node_list of this Topology.  # noqa: E501
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._node_list
 
@@ -68,7 +68,7 @@ class Topology(object):
 
 
         :param node_list: The node_list of this Topology.  # noqa: E501
-        :type: list[int]
+        :type: list[str]
         """
 
         self._node_list = node_list
@@ -79,7 +79,7 @@ class Topology(object):
 
 
         :return: The edge_list of this Topology.  # noqa: E501
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._edge_list
 
@@ -89,7 +89,7 @@ class Topology(object):
 
 
         :param edge_list: The edge_list of this Topology.  # noqa: E501
-        :type: list[int]
+        :type: list[str]
         """
 
         self._edge_list = edge_list

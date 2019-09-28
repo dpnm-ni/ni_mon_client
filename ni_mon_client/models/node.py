@@ -31,7 +31,7 @@ class Node(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
+        'name': 'str',
         'ip': 'str',
         'n_cores': 'int',
         'core_freq_mhz': 'int',
@@ -40,7 +40,7 @@ class Node(object):
     }
 
     attribute_map = {
-        'id': 'id',
+        'name': 'name',
         'ip': 'ip',
         'n_cores': 'n_cores',
         'core_freq_mhz': 'core_freq_mhz',
@@ -48,10 +48,10 @@ class Node(object):
         'ram_freq_mhz': 'ram_freq_mhz'
     }
 
-    def __init__(self, id=None, ip=None, n_cores=None, core_freq_mhz=None, ram_mb=None, ram_freq_mhz=None):  # noqa: E501
+    def __init__(self, name=None, ip=None, n_cores=None, core_freq_mhz=None, ram_mb=None, ram_freq_mhz=None):  # noqa: E501
         """Node - a model defined in Swagger"""  # noqa: E501
 
-        self._id = None
+        self._name = None
         self._ip = None
         self._n_cores = None
         self._core_freq_mhz = None
@@ -59,8 +59,8 @@ class Node(object):
         self._ram_freq_mhz = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if name is not None:
+            self.name = name
         if ip is not None:
             self.ip = ip
         if n_cores is not None:
@@ -73,25 +73,25 @@ class Node(object):
             self.ram_freq_mhz = ram_freq_mhz
 
     @property
-    def id(self):
-        """Gets the id of this Node.  # noqa: E501
+    def name(self):
+        """Gets the name of this Node.  # noqa: E501
 
 
-        :return: The id of this Node.  # noqa: E501
+        :return: The name of this Node.  # noqa: E501
         :rtype: str
         """
-        return self._id
+        return self._name
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Node.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this Node.
 
 
-        :param id: The id of this Node.  # noqa: E501
+        :param name: The name of this Node.  # noqa: E501
         :type: str
         """
 
-        self._id = id
+        self._name = name
 
     @property
     def ip(self):

@@ -32,36 +32,36 @@ class Link(object):
     """
     swagger_types = {
         'id': 'str',
-        'node1_id': 'int',
-        'node2_id': 'int',
+        'node1_name': 'str',
+        'node2_name': 'str',
         'delay_us': 'int',
         'max_bw_mbps': 'int'
     }
 
     attribute_map = {
         'id': 'id',
-        'node1_id': 'node1_id',
-        'node2_id': 'node2_id',
+        'node1_name': 'node1_name',
+        'node2_name': 'node2_name',
         'delay_us': 'delay_us',
         'max_bw_mbps': 'max_bw_mbps'
     }
 
-    def __init__(self, id=None, node1_id=None, node2_id=None, delay_us=None, max_bw_mbps=None):  # noqa: E501
+    def __init__(self, id=None, node1_name=None, node2_name=None, delay_us=None, max_bw_mbps=None):  # noqa: E501
         """Link - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
-        self._node1_id = None
-        self._node2_id = None
+        self._node1_name = None
+        self._node2_name = None
         self._delay_us = None
         self._max_bw_mbps = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if node1_id is not None:
-            self.node1_id = node1_id
-        if node2_id is not None:
-            self.node2_id = node2_id
+        if node1_name is not None:
+            self.node1_name = node1_name
+        if node2_name is not None:
+            self.node2_name = node2_name
         if delay_us is not None:
             self.delay_us = delay_us
         if max_bw_mbps is not None:
@@ -89,46 +89,46 @@ class Link(object):
         self._id = id
 
     @property
-    def node1_id(self):
-        """Gets the node1_id of this Link.  # noqa: E501
+    def node1_name(self):
+        """Gets the node1_name of this Link.  # noqa: E501
 
 
-        :return: The node1_id of this Link.  # noqa: E501
-        :rtype: int
+        :return: The node1_name of this Link.  # noqa: E501
+        :rtype: str
         """
-        return self._node1_id
+        return self._node1_name
 
-    @node1_id.setter
-    def node1_id(self, node1_id):
-        """Sets the node1_id of this Link.
+    @node1_name.setter
+    def node1_name(self, node1_name):
+        """Sets the node1_name of this Link.
 
 
-        :param node1_id: The node1_id of this Link.  # noqa: E501
-        :type: int
+        :param node1_name: The node1_name of this Link.  # noqa: E501
+        :type: str
         """
 
-        self._node1_id = node1_id
+        self._node1_name = node1_name
 
     @property
-    def node2_id(self):
-        """Gets the node2_id of this Link.  # noqa: E501
+    def node2_name(self):
+        """Gets the node2_name of this Link.  # noqa: E501
 
 
-        :return: The node2_id of this Link.  # noqa: E501
-        :rtype: int
+        :return: The node2_name of this Link.  # noqa: E501
+        :rtype: str
         """
-        return self._node2_id
+        return self._node2_name
 
-    @node2_id.setter
-    def node2_id(self, node2_id):
-        """Sets the node2_id of this Link.
+    @node2_name.setter
+    def node2_name(self, node2_name):
+        """Sets the node2_name of this Link.
 
 
-        :param node2_id: The node2_id of this Link.  # noqa: E501
-        :type: int
+        :param node2_name: The node2_name of this Link.  # noqa: E501
+        :type: str
         """
 
-        self._node2_id = node2_id
+        self._node2_name = node2_name
 
     @property
     def delay_us(self):

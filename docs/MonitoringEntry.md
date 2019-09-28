@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **timestamp** | **datetime** |  | [optional] 
 **component_type** | **str** |  | [optional] 
-**component_id** | **int** |  | [optional] 
+**component_id** | **str** |  | [optional] 
 **measurement_type** | **str** |  | [optional] 
 **measurement_value** | **float** |  | [optional] 
 

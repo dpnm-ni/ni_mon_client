@@ -33,7 +33,7 @@ class MonitoringEntry(object):
     swagger_types = {
         'timestamp': 'datetime',
         'component_type': 'str',
-        'component_id': 'int',
+        'component_id': 'str',
         'measurement_type': 'str',
         'measurement_value': 'float'
     }
@@ -115,7 +115,7 @@ class MonitoringEntry(object):
 
 
         :return: The component_id of this MonitoringEntry.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._component_id
 
@@ -125,7 +125,7 @@ class MonitoringEntry(object):
 
 
         :param component_id: The component_id of this MonitoringEntry.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._component_id = component_id
