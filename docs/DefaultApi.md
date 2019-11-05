@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**get_link**](DefaultApi.md#get_link) | **GET** /link/{id} | get detailed information of a link
 [**get_link_between_nodes**](DefaultApi.md#get_link_between_nodes) | **GET** /link_between_nodes | get detailed information of a link between two specific nodes
 [**get_links**](DefaultApi.md#get_links) | **GET** /links | get list of link
-[**get_mesurement**](DefaultApi.md#get_mesurement) | **GET** /vnfinstances/{id}/{mesurement_type} | get mesurement value
+[**get_measurement**](DefaultApi.md#get_measurement) | **GET** /vnfinstances/{id}/{measurement_type} | get measurement value
 [**get_node**](DefaultApi.md#get_node) | **GET** /nodes/{name} | get detailed information of a node
 [**get_node_list**](DefaultApi.md#get_node_list) | **GET** /nodes | get a list of nodes
 [**get_topology**](DefaultApi.md#get_topology) | **GET** /topology | get topology
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 get detailed information of a link
 
-Return detailed information of a link. 
+Return detailed information of a link.
 
 ### Example
 ```python
@@ -48,7 +48,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| The id of the link | 
+ **id** | **str**| The id of the link |
 
 ### Return type
 
@@ -70,7 +70,7 @@ No authorization required
 
 get detailed information of a link between two specific nodes
 
-Return detailed information of a link between two specific nodes. 
+Return detailed information of a link between two specific nodes.
 
 ### Example
 ```python
@@ -97,8 +97,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **node1_name** | **str**| The name of the first node in the link | 
- **node2_name** | **str**| The name of the second node in the link | 
+ **node1_name** | **str**| The name of the first node in the link |
+ **node2_name** | **str**| The name of the second node in the link |
 
 ### Return type
 
@@ -120,7 +120,7 @@ No authorization required
 
 get list of link
 
-Return list of link id. 
+Return list of link id.
 
 ### Example
 ```python
@@ -159,12 +159,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_mesurement**
-> list[MonitoringEntry] get_mesurement(id, mesurement_type, start_time, end_time)
+# **get_measurement**
+> list[MonitoringEntry] get_measurement(id, measurement_type, start_time, end_time)
 
-get mesurement value
+get measurement value
 
-Return the value of a mesurement of a vnf instance at a timestamp or a timestamp period 
+Return the value of a measurement of a vnf instance at a timestamp or a timestamp period
 
 ### Example
 ```python
@@ -177,26 +177,26 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = ni_mon_client.DefaultApi()
 id = 'id_example' # str | The id of the vnf instance
-mesurement_type = 'mesurement_type_example' # str | The mesurement_type
-start_time = '2013-10-20T19:20:30+01:00' # datetime | starting time to get the mesurement
-end_time = '2013-10-20T19:20:30+01:00' # datetime | ending time to get the mesurement
+measurement_type = 'measurement_type_example' # str | The measurement_type
+start_time = '2013-10-20T19:20:30+01:00' # datetime | starting time to get the measurement
+end_time = '2013-10-20T19:20:30+01:00' # datetime | ending time to get the measurement
 
 try:
-    # get mesurement value
-    api_response = api_instance.get_mesurement(id, mesurement_type, start_time, end_time)
+    # get measurement value
+    api_response = api_instance.get_measurement(id, measurement_type, start_time, end_time)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_mesurement: %s\n" % e)
+    print("Exception when calling DefaultApi->get_measurement: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| The id of the vnf instance | 
- **mesurement_type** | **str**| The mesurement_type | 
- **start_time** | **datetime**| starting time to get the mesurement | 
- **end_time** | **datetime**| ending time to get the mesurement | 
+ **id** | **str**| The id of the vnf instance |
+ **measurement_type** | **str**| The measurement_type |
+ **start_time** | **datetime**| starting time to get the measurement |
+ **end_time** | **datetime**| ending time to get the measurement |
 
 ### Return type
 
@@ -218,7 +218,7 @@ No authorization required
 
 get detailed information of a node
 
-Return detailed information of a node 
+Return detailed information of a node
 
 ### Example
 ```python
@@ -244,7 +244,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **str**| The name of the node | 
+ **name** | **str**| The name of the node |
 
 ### Return type
 
@@ -266,7 +266,7 @@ No authorization required
 
 get a list of nodes
 
-Return a list of nodes 
+Return a list of nodes
 
 ### Example
 ```python
@@ -310,7 +310,7 @@ No authorization required
 
 get topology
 
-Return a topology with lists of node names and link ids 
+Return a topology with lists of node names and link ids
 
 ### Example
 ```python
@@ -354,7 +354,7 @@ No authorization required
 
 get detailed information of a vnfflavor
 
-Return detailed information of a vnfflavor 
+Return detailed information of a vnfflavor
 
 ### Example
 ```python
@@ -380,7 +380,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| The name of the vnfflavor | 
+ **id** | **str**| The name of the vnfflavor |
 
 ### Return type
 
@@ -402,7 +402,7 @@ No authorization required
 
 get a list of vnfflavors
 
-Return a list of vnfflavors 
+Return a list of vnfflavors
 
 ### Example
 ```python
@@ -446,7 +446,7 @@ No authorization required
 
 get detailed information of a vnf instance
 
-Return detailed information of a vnf instance 
+Return detailed information of a vnf instance
 
 ### Example
 ```python
@@ -472,7 +472,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| The id of the vnf instance | 
+ **id** | **str**| The id of the vnf instance |
 
 ### Return type
 
@@ -494,7 +494,7 @@ No authorization required
 
 get a list of vnf instances
 
-Return a list of vnf instances 
+Return a list of vnf instances
 
 ### Example
 ```python

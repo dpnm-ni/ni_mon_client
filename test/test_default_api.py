@@ -50,10 +50,10 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_get_mesurement(self):
-        """Test case for get_mesurement
+    def test_get_measurement(self):
+        """Test case for get_measurement
 
-        get mesurement value  # noqa: E501
+        get measurement value  # noqa: E501
         """
         pass
 

@@ -73,7 +73,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_link**](docs/DefaultApi.md#get_link) | **GET** /link/{id} | get detailed information of a link
 *DefaultApi* | [**get_link_between_nodes**](docs/DefaultApi.md#get_link_between_nodes) | **GET** /link_between_nodes | get detailed information of a link between two specific nodes
 *DefaultApi* | [**get_links**](docs/DefaultApi.md#get_links) | **GET** /links | get list of link
-*DefaultApi* | [**get_mesurement**](docs/DefaultApi.md#get_mesurement) | **GET** /vnfinstances/{id}/{mesurement_type} | get mesurement value
+*DefaultApi* | [**get_measurement**](docs/DefaultApi.md#get_measurement) | **GET** /vnfinstances/{id}/{measurement_type} | get measurement value
 *DefaultApi* | [**get_node**](docs/DefaultApi.md#get_node) | **GET** /nodes/{name} | get detailed information of a node
 *DefaultApi* | [**get_node_list**](docs/DefaultApi.md#get_node_list) | **GET** /nodes | get a list of nodes
 *DefaultApi* | [**get_topology**](docs/DefaultApi.md#get_topology) | **GET** /topology | get topology

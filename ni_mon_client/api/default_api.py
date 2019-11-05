@@ -318,51 +318,51 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_mesurement(self, id, mesurement_type, start_time, end_time, **kwargs):  # noqa: E501
-        """get mesurement value  # noqa: E501
+    def get_measurement(self, id, measurement_type, start_time, end_time, **kwargs):  # noqa: E501
+        """get measurement value  # noqa: E501
 
-        Return the value of a mesurement of a vnf instance at a timestamp or a timestamp period   # noqa: E501
+        Return the value of a measurement of a vnf instance at a timestamp or a timestamp period   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_mesurement(id, mesurement_type, start_time, end_time, async_req=True)
+        >>> thread = api.get_measurement(id, measurement_type, start_time, end_time, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str id: The id of the vnf instance (required)
-        :param str mesurement_type: The mesurement_type (required)
-        :param datetime start_time: starting time to get the mesurement (required)
-        :param datetime end_time: ending time to get the mesurement (required)
+        :param str measurement_type: The measurement_type (required)
+        :param datetime start_time: starting time to get the measurement (required)
+        :param datetime end_time: ending time to get the measurement (required)
         :return: list[MonitoringEntry]
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_mesurement_with_http_info(id, mesurement_type, start_time, end_time, **kwargs)  # noqa: E501
+            return self.get_measurement_with_http_info(id, measurement_type, start_time, end_time, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_mesurement_with_http_info(id, mesurement_type, start_time, end_time, **kwargs)  # noqa: E501
+            (data) = self.get_measurement_with_http_info(id, measurement_type, start_time, end_time, **kwargs)  # noqa: E501
             return data
 
-    def get_mesurement_with_http_info(self, id, mesurement_type, start_time, end_time, **kwargs):  # noqa: E501
-        """get mesurement value  # noqa: E501
+    def get_measurement_with_http_info(self, id, measurement_type, start_time, end_time, **kwargs):  # noqa: E501
+        """get measurement value  # noqa: E501
 
-        Return the value of a mesurement of a vnf instance at a timestamp or a timestamp period   # noqa: E501
+        Return the value of a measurement of a vnf instance at a timestamp or a timestamp period   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_mesurement_with_http_info(id, mesurement_type, start_time, end_time, async_req=True)
+        >>> thread = api.get_measurement_with_http_info(id, measurement_type, start_time, end_time, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str id: The id of the vnf instance (required)
-        :param str mesurement_type: The mesurement_type (required)
-        :param datetime start_time: starting time to get the mesurement (required)
-        :param datetime end_time: ending time to get the mesurement (required)
+        :param str measurement_type: The measurement_type (required)
+        :param datetime start_time: starting time to get the measurement (required)
+        :param datetime end_time: ending time to get the measurement (required)
         :return: list[MonitoringEntry]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'mesurement_type', 'start_time', 'end_time']  # noqa: E501
+        all_params = ['id', 'measurement_type', 'start_time', 'end_time']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -373,34 +373,34 @@ class DefaultApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_mesurement" % key
+                    " to method get_measurement" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `get_mesurement`")  # noqa: E501
-        # verify the required parameter 'mesurement_type' is set
-        if ('mesurement_type' not in params or
-                params['mesurement_type'] is None):
-            raise ValueError("Missing the required parameter `mesurement_type` when calling `get_mesurement`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `get_measurement`")  # noqa: E501
+        # verify the required parameter 'measurement_type' is set
+        if ('measurement_type' not in params or
+                params['measurement_type'] is None):
+            raise ValueError("Missing the required parameter `measurement_type` when calling `get_measurement`")  # noqa: E501
         # verify the required parameter 'start_time' is set
         if ('start_time' not in params or
                 params['start_time'] is None):
-            raise ValueError("Missing the required parameter `start_time` when calling `get_mesurement`")  # noqa: E501
+            raise ValueError("Missing the required parameter `start_time` when calling `get_measurement`")  # noqa: E501
         # verify the required parameter 'end_time' is set
         if ('end_time' not in params or
                 params['end_time'] is None):
-            raise ValueError("Missing the required parameter `end_time` when calling `get_mesurement`")  # noqa: E501
+            raise ValueError("Missing the required parameter `end_time` when calling `get_measurement`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']  # noqa: E501
-        if 'mesurement_type' in params:
-            path_params['mesurement_type'] = params['mesurement_type']  # noqa: E501
+        if 'measurement_type' in params:
+            path_params['measurement_type'] = params['measurement_type']  # noqa: E501
 
         query_params = []
         if 'start_time' in params:
@@ -422,7 +422,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/vnfinstances/{id}/{mesurement_type}', 'GET',
+            '/vnfinstances/{id}/{measurement_type}', 'GET',
             path_params,
             query_params,
             header_params,
