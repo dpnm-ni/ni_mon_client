@@ -31,68 +31,68 @@ class NetworkPort(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'ip_address': 'str'
+        'port_id': 'str',
+        'network_id': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'ip_address': 'ip_address'
+        'port_id': 'port_id',
+        'network_id': 'network_id'
     }
 
-    def __init__(self, id=None, ip_address=None):  # noqa: E501
+    def __init__(self, port_id=None, network_id=None):  # noqa: E501
         """NetworkPort - a model defined in Swagger"""  # noqa: E501
 
-        self._id = None
-        self._ip_address = None
+        self._port_id = None
+        self._network_id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if ip_address is not None:
-            self.ip_address = ip_address
+        if port_id is not None:
+            self.port_id = port_id
+        if network_id is not None:
+            self.network_id = network_id
 
     @property
-    def id(self):
-        """Gets the id of this NetworkPort.  # noqa: E501
+    def port_id(self):
+        """Gets the port_id of this NetworkPort.  # noqa: E501
 
 
-        :return: The id of this NetworkPort.  # noqa: E501
+        :return: The port_id of this NetworkPort.  # noqa: E501
         :rtype: str
         """
-        return self._id
+        return self._port_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this NetworkPort.
+    @port_id.setter
+    def port_id(self, port_id):
+        """Sets the port_id of this NetworkPort.
 
 
-        :param id: The id of this NetworkPort.  # noqa: E501
+        :param port_id: The port_id of this NetworkPort.  # noqa: E501
         :type: str
         """
 
-        self._id = id
+        self._port_id = port_id
 
     @property
-    def ip_address(self):
-        """Gets the ip_address of this NetworkPort.  # noqa: E501
+    def network_id(self):
+        """Gets the network_id of this NetworkPort.  # noqa: E501
 
 
-        :return: The ip_address of this NetworkPort.  # noqa: E501
+        :return: The network_id of this NetworkPort.  # noqa: E501
         :rtype: str
         """
-        return self._ip_address
+        return self._network_id
 
-    @ip_address.setter
-    def ip_address(self, ip_address):
-        """Sets the ip_address of this NetworkPort.
+    @network_id.setter
+    def network_id(self, network_id):
+        """Sets the network_id of this NetworkPort.
 
 
-        :param ip_address: The ip_address of this NetworkPort.  # noqa: E501
+        :param network_id: The network_id of this NetworkPort.  # noqa: E501
         :type: str
         """
 
-        self._ip_address = ip_address
+        self._network_id = network_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
