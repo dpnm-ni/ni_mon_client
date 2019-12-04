@@ -36,7 +36,7 @@ class VNFInstance(object):
         'flavor_type': 'VNFFlavor',
         'node_name': 'str',
         'ip': 'str',
-        'ports': 'list[str]'
+        'ports': 'list[NetworkPort]'
     }
 
     attribute_map = {
@@ -183,7 +183,7 @@ class VNFInstance(object):
 
 
         :return: The ports of this VNFInstance.  # noqa: E501
-        :rtype: list[str]
+        :rtype: list[NetworkPort]
         """
         return self._ports
 
@@ -193,7 +193,7 @@ class VNFInstance(object):
 
 
         :param ports: The ports of this VNFInstance.  # noqa: E501
-        :type: list[str]
+        :type: list[NetworkPort]
         """
 
         self._ports = ports

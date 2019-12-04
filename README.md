@@ -87,6 +87,7 @@ Class | Method | HTTP request | Description
 
  - [Link](docs/Link.md)
  - [MonitoringEntry](docs/MonitoringEntry.md)
+ - [NetworkPort](docs/NetworkPort.md)
  - [Node](docs/Node.md)
  - [Topology](docs/Topology.md)
  - [VNFFlavor](docs/VNFFlavor.md)
