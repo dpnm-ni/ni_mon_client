@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_links**
-> Link get_links()
+> list[Link] get_links()
 
 get list of link
 
@@ -146,7 +146,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Link**](Link.md)
+[**list[Link]**](Link.md)
 
 ### Authorization
 
