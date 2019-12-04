@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
 **flavor_type** | [**VNFFlavor**](VNFFlavor.md) |  | [optional] 
 **node_name** | **str** |  | [optional] 
 **ip** | **str** |  | [optional] 

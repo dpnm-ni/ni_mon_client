@@ -32,6 +32,7 @@ class VNFInstance(object):
     """
     swagger_types = {
         'id': 'str',
+        'name': 'str',
         'flavor_type': 'VNFFlavor',
         'node_name': 'str',
         'ip': 'str',
@@ -40,16 +41,18 @@ class VNFInstance(object):
 
     attribute_map = {
         'id': 'id',
+        'name': 'name',
         'flavor_type': 'flavor_type',
         'node_name': 'node_name',
         'ip': 'ip',
         'ports': 'ports'
     }
 
-    def __init__(self, id=None, flavor_type=None, node_name=None, ip=None, ports=None):  # noqa: E501
+    def __init__(self, id=None, name=None, flavor_type=None, node_name=None, ip=None, ports=None):  # noqa: E501
         """VNFInstance - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._name = None
         self._flavor_type = None
         self._node_name = None
         self._ip = None
@@ -58,6 +61,8 @@ class VNFInstance(object):
 
         if id is not None:
             self.id = id
+        if name is not None:
+            self.name = name
         if flavor_type is not None:
             self.flavor_type = flavor_type
         if node_name is not None:
@@ -87,6 +92,27 @@ class VNFInstance(object):
         """
 
         self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this VNFInstance.  # noqa: E501
+
+
+        :return: The name of this VNFInstance.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this VNFInstance.
+
+
+        :param name: The name of this VNFInstance.  # noqa: E501
+        :type: str
+        """
+
+        self._name = name
 
     @property
     def flavor_type(self):

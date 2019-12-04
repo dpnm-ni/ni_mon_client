@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_links**
-> str get_links()
+> Link get_links()
 
 get list of link
 
@@ -146,7 +146,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**str**
+[**Link**](Link.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_node_list**
-> list[str] get_node_list()
+> list[Node] get_node_list()
 
 get a list of nodes
 
@@ -292,7 +292,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**list[str]**
+[**list[Node]**](Node.md)
 
 ### Authorization
 
@@ -398,7 +398,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_vnf_flavor_list**
-> list[str] get_vnf_flavor_list()
+> list[VNFFlavor] get_vnf_flavor_list()
 
 get a list of vnfflavors
 
@@ -428,7 +428,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**list[str]**
+[**list[VNFFlavor]**](VNFFlavor.md)
 
 ### Authorization
 
