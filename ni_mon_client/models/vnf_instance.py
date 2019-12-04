@@ -33,29 +33,26 @@ class VNFInstance(object):
     swagger_types = {
         'id': 'str',
         'name': 'str',
-        'flavor_type': 'VNFFlavor',
+        'flavor_id': 'str',
         'node_name': 'str',
-        'ip': 'str',
         'ports': 'list[NetworkPort]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'flavor_type': 'flavor_type',
+        'flavor_id': 'flavor_id',
         'node_name': 'node_name',
-        'ip': 'ip',
         'ports': 'ports'
     }
 
-    def __init__(self, id=None, name=None, flavor_type=None, node_name=None, ip=None, ports=None):  # noqa: E501
+    def __init__(self, id=None, name=None, flavor_id=None, node_name=None, ports=None):  # noqa: E501
         """VNFInstance - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
         self._name = None
-        self._flavor_type = None
+        self._flavor_id = None
         self._node_name = None
-        self._ip = None
         self._ports = None
         self.discriminator = None
 
@@ -63,12 +60,10 @@ class VNFInstance(object):
             self.id = id
         if name is not None:
             self.name = name
-        if flavor_type is not None:
-            self.flavor_type = flavor_type
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         if node_name is not None:
             self.node_name = node_name
-        if ip is not None:
-            self.ip = ip
         if ports is not None:
             self.ports = ports
 
@@ -115,25 +110,25 @@ class VNFInstance(object):
         self._name = name
 
     @property
-    def flavor_type(self):
-        """Gets the flavor_type of this VNFInstance.  # noqa: E501
+    def flavor_id(self):
+        """Gets the flavor_id of this VNFInstance.  # noqa: E501
 
 
-        :return: The flavor_type of this VNFInstance.  # noqa: E501
-        :rtype: VNFFlavor
+        :return: The flavor_id of this VNFInstance.  # noqa: E501
+        :rtype: str
         """
-        return self._flavor_type
+        return self._flavor_id
 
-    @flavor_type.setter
-    def flavor_type(self, flavor_type):
-        """Sets the flavor_type of this VNFInstance.
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this VNFInstance.
 
 
-        :param flavor_type: The flavor_type of this VNFInstance.  # noqa: E501
-        :type: VNFFlavor
+        :param flavor_id: The flavor_id of this VNFInstance.  # noqa: E501
+        :type: str
         """
 
-        self._flavor_type = flavor_type
+        self._flavor_id = flavor_id
 
     @property
     def node_name(self):
@@ -155,27 +150,6 @@ class VNFInstance(object):
         """
 
         self._node_name = node_name
-
-    @property
-    def ip(self):
-        """Gets the ip of this VNFInstance.  # noqa: E501
-
-
-        :return: The ip of this VNFInstance.  # noqa: E501
-        :rtype: str
-        """
-        return self._ip
-
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this VNFInstance.
-
-
-        :param ip: The ip of this VNFInstance.  # noqa: E501
-        :type: str
-        """
-
-        self._ip = ip
 
     @property
     def ports(self):
