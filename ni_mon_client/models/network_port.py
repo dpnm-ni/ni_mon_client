@@ -33,29 +33,29 @@ class NetworkPort(object):
     swagger_types = {
         'port_id': 'str',
         'network_id': 'str',
-        'ip_address': 'list[str]'
+        'ip_addresses': 'list[str]'
     }
 
     attribute_map = {
         'port_id': 'port_id',
         'network_id': 'network_id',
-        'ip_address': 'ip_address'
+        'ip_addresses': 'ip_addresses'
     }
 
-    def __init__(self, port_id=None, network_id=None, ip_address=None):  # noqa: E501
+    def __init__(self, port_id=None, network_id=None, ip_addresses=None):  # noqa: E501
         """NetworkPort - a model defined in Swagger"""  # noqa: E501
 
         self._port_id = None
         self._network_id = None
-        self._ip_address = None
+        self._ip_addresses = None
         self.discriminator = None
 
         if port_id is not None:
             self.port_id = port_id
         if network_id is not None:
             self.network_id = network_id
-        if ip_address is not None:
-            self.ip_address = ip_address
+        if ip_addresses is not None:
+            self.ip_addresses = ip_addresses
 
     @property
     def port_id(self):
@@ -100,25 +100,25 @@ class NetworkPort(object):
         self._network_id = network_id
 
     @property
-    def ip_address(self):
-        """Gets the ip_address of this NetworkPort.  # noqa: E501
+    def ip_addresses(self):
+        """Gets the ip_addresses of this NetworkPort.  # noqa: E501
 
 
-        :return: The ip_address of this NetworkPort.  # noqa: E501
+        :return: The ip_addresses of this NetworkPort.  # noqa: E501
         :rtype: list[str]
         """
-        return self._ip_address
+        return self._ip_addresses
 
-    @ip_address.setter
-    def ip_address(self, ip_address):
-        """Sets the ip_address of this NetworkPort.
+    @ip_addresses.setter
+    def ip_addresses(self, ip_addresses):
+        """Sets the ip_addresses of this NetworkPort.
 
 
-        :param ip_address: The ip_address of this NetworkPort.  # noqa: E501
+        :param ip_addresses: The ip_addresses of this NetworkPort.  # noqa: E501
         :type: list[str]
         """
 
-        self._ip_address = ip_address
+        self._ip_addresses = ip_addresses
 
     def to_dict(self):
         """Returns the model properties as a dict"""
