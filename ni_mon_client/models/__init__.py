@@ -16,7 +16,7 @@ from __future__ import absolute_import
 
 # import models into model package
 from ni_mon_client.models.link import Link
-from ni_mon_client.models.measurements import Measurements
+from ni_mon_client.models.measurement_types import MeasurementTypes
 from ni_mon_client.models.monitoring_entry import MonitoringEntry
 from ni_mon_client.models.network_port import NetworkPort
 from ni_mon_client.models.node import Node

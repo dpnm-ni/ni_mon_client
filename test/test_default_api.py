@@ -29,8 +29,8 @@ class TestDefaultApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_get_all_measurements(self):
-        """Test case for get_all_measurements
+    def test_get_all_measurement_types(self):
+        """Test case for get_all_measurement_types
 
         get a list of all measurements  # noqa: E501
         """
@@ -64,8 +64,8 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_get_measurements(self):
-        """Test case for get_measurements
+    def test_get_measurement_types(self):
+        """Test case for get_measurement_types
 
         get a list of measurements of a vnf instance  # noqa: E501
         """

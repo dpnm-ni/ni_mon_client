@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_all_measurements**](DefaultApi.md#get_all_measurements) | **GET** /measurements | get a list of all measurements
+[**get_all_measurement_types**](DefaultApi.md#get_all_measurement_types) | **GET** /measurement_types | get a list of all measurements
 [**get_link**](DefaultApi.md#get_link) | **GET** /link/{id} | get detailed information of a link
 [**get_link_between_nodes**](DefaultApi.md#get_link_between_nodes) | **GET** /link_between_nodes | get detailed information of a link between two specific nodes
 [**get_links**](DefaultApi.md#get_links) | **GET** /links | get list of link
 [**get_measurement**](DefaultApi.md#get_measurement) | **GET** /vnfinstances/{id}/{measurement_type} | get measurement value
-[**get_measurements**](DefaultApi.md#get_measurements) | **GET** /measurements/{id} | get a list of measurements of a vnf instance
+[**get_measurement_types**](DefaultApi.md#get_measurement_types) | **GET** /measurement_types/{id} | get a list of measurements of a vnf instance
 [**get_node**](DefaultApi.md#get_node) | **GET** /nodes/{name} | get detailed information of a node
 [**get_node_list**](DefaultApi.md#get_node_list) | **GET** /nodes | get a list of nodes
 [**get_topology**](DefaultApi.md#get_topology) | **GET** /topology | get topology
@@ -19,8 +19,8 @@ Method | HTTP request | Description
 [**get_vnf_instance_list**](DefaultApi.md#get_vnf_instance_list) | **GET** /vnfinstances | get a list of vnf instances
 
 
-# **get_all_measurements**
-> Measurements get_all_measurements()
+# **get_all_measurement_types**
+> MeasurementTypes get_all_measurement_types()
 
 get a list of all measurements
 
@@ -39,10 +39,10 @@ api_instance = ni_mon_client.DefaultApi()
 
 try:
     # get a list of all measurements
-    api_response = api_instance.get_all_measurements()
+    api_response = api_instance.get_all_measurement_types()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_all_measurements: %s\n" % e)
+    print("Exception when calling DefaultApi->get_all_measurement_types: %s\n" % e)
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Measurements**](Measurements.md)
+[**MeasurementTypes**](MeasurementTypes.md)
 
 ### Authorization
 
@@ -259,8 +259,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_measurements**
-> Measurements get_measurements(id)
+# **get_measurement_types**
+> MeasurementTypes get_measurement_types(id)
 
 get a list of measurements of a vnf instance
 
@@ -280,10 +280,10 @@ id = 'id_example' # str | The id of the vnf instance
 
 try:
     # get a list of measurements of a vnf instance
-    api_response = api_instance.get_measurements(id)
+    api_response = api_instance.get_measurement_types(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_measurements: %s\n" % e)
+    print("Exception when calling DefaultApi->get_measurement_types: %s\n" % e)
 ```
 
 ### Parameters
@@ -294,7 +294,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Measurements**](Measurements.md)
+[**MeasurementTypes**](MeasurementTypes.md)
 
 ### Authorization
 
