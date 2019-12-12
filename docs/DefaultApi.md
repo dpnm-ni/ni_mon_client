@@ -4,7 +4,6 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_all_measurement_types**](DefaultApi.md#get_all_measurement_types) | **GET** /measurement_types | get a list of all measurements
 [**get_link**](DefaultApi.md#get_link) | **GET** /link/{id} | get detailed information of a link
 [**get_link_between_nodes**](DefaultApi.md#get_link_between_nodes) | **GET** /link_between_nodes | get detailed information of a link between two specific nodes
 [**get_links**](DefaultApi.md#get_links) | **GET** /links | get list of link
@@ -18,50 +17,6 @@ Method | HTTP request | Description
 [**get_vnf_instance**](DefaultApi.md#get_vnf_instance) | **GET** /vnfinstances/{id} | get detailed information of a vnf instance
 [**get_vnf_instance_list**](DefaultApi.md#get_vnf_instance_list) | **GET** /vnfinstances | get a list of vnf instances
 
-
-# **get_all_measurement_types**
-> MeasurementTypes get_all_measurement_types()
-
-get a list of all measurements
-
-Return a list of all measurements 
-
-### Example
-```python
-from __future__ import print_function
-import time
-import ni_mon_client
-from ni_mon_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = ni_mon_client.DefaultApi()
-
-try:
-    # get a list of all measurements
-    api_response = api_instance.get_all_measurement_types()
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DefaultApi->get_all_measurement_types: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**MeasurementTypes**](MeasurementTypes.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_link**
 > Link get_link(id)

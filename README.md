@@ -53,13 +53,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = ni_mon_client.DefaultApi(ni_mon_client.ApiClient(configuration))
+id = 'id_example' # str | The id of the link
 
 try:
-    # get a list of all measurements
-    api_response = api_instance.get_all_measurement_types()
+    # get detailed information of a link
+    api_response = api_instance.get_link(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_all_measurement_types: %s\n" % e)
+    print("Exception when calling DefaultApi->get_link: %s\n" % e)
 
 ```
 
@@ -69,7 +70,6 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**get_all_measurement_types**](docs/DefaultApi.md#get_all_measurement_types) | **GET** /measurement_types | get a list of all measurements
 *DefaultApi* | [**get_link**](docs/DefaultApi.md#get_link) | **GET** /link/{id} | get detailed information of a link
 *DefaultApi* | [**get_link_between_nodes**](docs/DefaultApi.md#get_link_between_nodes) | **GET** /link_between_nodes | get detailed information of a link between two specific nodes
 *DefaultApi* | [**get_links**](docs/DefaultApi.md#get_links) | **GET** /links | get list of link

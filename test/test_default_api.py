@@ -29,13 +29,6 @@ class TestDefaultApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_get_all_measurement_types(self):
-        """Test case for get_all_measurement_types
-
-        get a list of all measurements  # noqa: E501
-        """
-        pass
-
     def test_get_link(self):
         """Test case for get_link
 
