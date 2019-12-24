@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
+**status** | **str** |  | [optional] 
 **flavor_id** | **str** |  | [optional] 
 **node_name** | **str** |  | [optional] 
 **ports** | [**list[NetworkPort]**](NetworkPort.md) |  | [optional] 

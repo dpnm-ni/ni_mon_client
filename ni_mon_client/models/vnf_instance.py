@@ -33,6 +33,7 @@ class VNFInstance(object):
     swagger_types = {
         'id': 'str',
         'name': 'str',
+        'status': 'str',
         'flavor_id': 'str',
         'node_name': 'str',
         'ports': 'list[NetworkPort]'
@@ -41,16 +42,18 @@ class VNFInstance(object):
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'status': 'status',
         'flavor_id': 'flavor_id',
         'node_name': 'node_name',
         'ports': 'ports'
     }
 
-    def __init__(self, id=None, name=None, flavor_id=None, node_name=None, ports=None):  # noqa: E501
+    def __init__(self, id=None, name=None, status=None, flavor_id=None, node_name=None, ports=None):  # noqa: E501
         """VNFInstance - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
         self._name = None
+        self._status = None
         self._flavor_id = None
         self._node_name = None
         self._ports = None
@@ -60,6 +63,8 @@ class VNFInstance(object):
             self.id = id
         if name is not None:
             self.name = name
+        if status is not None:
+            self.status = status
         if flavor_id is not None:
             self.flavor_id = flavor_id
         if node_name is not None:
@@ -108,6 +113,27 @@ class VNFInstance(object):
         """
 
         self._name = name
+
+    @property
+    def status(self):
+        """Gets the status of this VNFInstance.  # noqa: E501
+
+
+        :return: The status of this VNFInstance.  # noqa: E501
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this VNFInstance.
+
+
+        :param status: The status of this VNFInstance.  # noqa: E501
+        :type: str
+        """
+
+        self._status = status
 
     @property
     def flavor_id(self):
