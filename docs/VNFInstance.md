@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** |  | [optional] 
-**name** | **str** | state of VNF VM. (ACTIVE, SHUTOFF, ERROR, etc.) | [optional] 
-**status** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
+**status** | **str** | state of VNF VM. (ACTIVE, SHUTOFF, ERROR, etc.) | [optional] 
 **flavor_id** | **str** |  | [optional] 
 **node_name** | **str** |  | [optional] 
 **ports** | [**list[NetworkPort]**](NetworkPort.md) |  | [optional] 

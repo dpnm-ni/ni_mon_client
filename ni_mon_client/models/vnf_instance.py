@@ -97,7 +97,6 @@ class VNFInstance(object):
     def name(self):
         """Gets the name of this VNFInstance.  # noqa: E501
 
-        state of VNF VM. (ACTIVE, SHUTOFF, ERROR, etc.)  # noqa: E501
 
         :return: The name of this VNFInstance.  # noqa: E501
         :rtype: str
@@ -108,7 +107,6 @@ class VNFInstance(object):
     def name(self, name):
         """Sets the name of this VNFInstance.
 
-        state of VNF VM. (ACTIVE, SHUTOFF, ERROR, etc.)  # noqa: E501
 
         :param name: The name of this VNFInstance.  # noqa: E501
         :type: str
@@ -120,6 +118,7 @@ class VNFInstance(object):
     def status(self):
         """Gets the status of this VNFInstance.  # noqa: E501
 
+        state of VNF VM. (ACTIVE, SHUTOFF, ERROR, etc.)  # noqa: E501
 
         :return: The status of this VNFInstance.  # noqa: E501
         :rtype: str
@@ -130,6 +129,7 @@ class VNFInstance(object):
     def status(self, status):
         """Sets the status of this VNFInstance.
 
+        state of VNF VM. (ACTIVE, SHUTOFF, ERROR, etc.)  # noqa: E501
 
         :param status: The status of this VNFInstance.  # noqa: E501
         :type: str
