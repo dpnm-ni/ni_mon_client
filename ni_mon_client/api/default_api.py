@@ -896,13 +896,13 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_vnf_flavor_list(self, **kwargs):  # noqa: E501
+    def get_vnf_flavors(self, **kwargs):  # noqa: E501
         """get a list of vnfflavors  # noqa: E501
 
         Return a list of vnfflavors   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_vnf_flavor_list(async_req=True)
+        >>> thread = api.get_vnf_flavors(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -912,18 +912,18 @@ class DefaultApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_vnf_flavor_list_with_http_info(**kwargs)  # noqa: E501
+            return self.get_vnf_flavors_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_vnf_flavor_list_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_vnf_flavors_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_vnf_flavor_list_with_http_info(self, **kwargs):  # noqa: E501
+    def get_vnf_flavors_with_http_info(self, **kwargs):  # noqa: E501
         """get a list of vnfflavors  # noqa: E501
 
         Return a list of vnfflavors   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_vnf_flavor_list_with_http_info(async_req=True)
+        >>> thread = api.get_vnf_flavors_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -943,7 +943,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_vnf_flavor_list" % key
+                    " to method get_vnf_flavors" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1078,13 +1078,13 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_vnf_instance_list(self, **kwargs):  # noqa: E501
+    def get_vnf_instances(self, **kwargs):  # noqa: E501
         """get a list of vnf instances  # noqa: E501
 
         Return a list of vnf instances   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_vnf_instance_list(async_req=True)
+        >>> thread = api.get_vnf_instances(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1094,18 +1094,18 @@ class DefaultApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_vnf_instance_list_with_http_info(**kwargs)  # noqa: E501
+            return self.get_vnf_instances_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_vnf_instance_list_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_vnf_instances_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_vnf_instance_list_with_http_info(self, **kwargs):  # noqa: E501
+    def get_vnf_instances_with_http_info(self, **kwargs):  # noqa: E501
         """get a list of vnf instances  # noqa: E501
 
         Return a list of vnf instances   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_vnf_instance_list_with_http_info(async_req=True)
+        >>> thread = api.get_vnf_instances_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1125,7 +1125,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_vnf_instance_list" % key
+                    " to method get_vnf_instances" % key
                 )
             params[key] = val
         del params['kwargs']

@@ -79,9 +79,9 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_nodes**](docs/DefaultApi.md#get_nodes) | **GET** /nodes | get a list of nodes
 *DefaultApi* | [**get_topology**](docs/DefaultApi.md#get_topology) | **GET** /topology | get topology
 *DefaultApi* | [**get_vnf_flavor**](docs/DefaultApi.md#get_vnf_flavor) | **GET** /vnfflavors/{id} | get detailed information of a vnfflavor
-*DefaultApi* | [**get_vnf_flavor_list**](docs/DefaultApi.md#get_vnf_flavor_list) | **GET** /vnfflavors | get a list of vnfflavors
+*DefaultApi* | [**get_vnf_flavors**](docs/DefaultApi.md#get_vnf_flavors) | **GET** /vnfflavors | get a list of vnfflavors
 *DefaultApi* | [**get_vnf_instance**](docs/DefaultApi.md#get_vnf_instance) | **GET** /vnfinstances/{id} | get detailed information of a vnf instance
-*DefaultApi* | [**get_vnf_instance_list**](docs/DefaultApi.md#get_vnf_instance_list) | **GET** /vnfinstances | get a list of vnf instances
+*DefaultApi* | [**get_vnf_instances**](docs/DefaultApi.md#get_vnf_instances) | **GET** /vnfinstances | get a list of vnf instances
 
 
 ## Documentation For Models

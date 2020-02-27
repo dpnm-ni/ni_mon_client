@@ -92,8 +92,8 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_get_vnf_flavor_list(self):
-        """Test case for get_vnf_flavor_list
+    def test_get_vnf_flavors(self):
+        """Test case for get_vnf_flavors
 
         get a list of vnfflavors  # noqa: E501
         """
@@ -106,8 +106,8 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_get_vnf_instance_list(self):
-        """Test case for get_vnf_instance_list
+    def test_get_vnf_instances(self):
+        """Test case for get_vnf_instances
 
         get a list of vnf instances  # noqa: E501
         """

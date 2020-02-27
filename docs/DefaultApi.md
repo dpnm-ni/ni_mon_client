@@ -13,9 +13,9 @@ Method | HTTP request | Description
 [**get_nodes**](DefaultApi.md#get_nodes) | **GET** /nodes | get a list of nodes
 [**get_topology**](DefaultApi.md#get_topology) | **GET** /topology | get topology
 [**get_vnf_flavor**](DefaultApi.md#get_vnf_flavor) | **GET** /vnfflavors/{id} | get detailed information of a vnfflavor
-[**get_vnf_flavor_list**](DefaultApi.md#get_vnf_flavor_list) | **GET** /vnfflavors | get a list of vnfflavors
+[**get_vnf_flavors**](DefaultApi.md#get_vnf_flavors) | **GET** /vnfflavors | get a list of vnfflavors
 [**get_vnf_instance**](DefaultApi.md#get_vnf_instance) | **GET** /vnfinstances/{id} | get detailed information of a vnf instance
-[**get_vnf_instance_list**](DefaultApi.md#get_vnf_instance_list) | **GET** /vnfinstances | get a list of vnf instances
+[**get_vnf_instances**](DefaultApi.md#get_vnf_instances) | **GET** /vnfinstances | get a list of vnf instances
 
 
 # **get_link**
@@ -446,8 +446,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_vnf_flavor_list**
-> list[VNFFlavor] get_vnf_flavor_list()
+# **get_vnf_flavors**
+> list[VNFFlavor] get_vnf_flavors()
 
 get a list of vnfflavors
 
@@ -466,10 +466,10 @@ api_instance = ni_mon_client.DefaultApi()
 
 try:
     # get a list of vnfflavors
-    api_response = api_instance.get_vnf_flavor_list()
+    api_response = api_instance.get_vnf_flavors()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_vnf_flavor_list: %s\n" % e)
+    print("Exception when calling DefaultApi->get_vnf_flavors: %s\n" % e)
 ```
 
 ### Parameters
@@ -538,8 +538,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_vnf_instance_list**
-> list[VNFInstance] get_vnf_instance_list()
+# **get_vnf_instances**
+> list[VNFInstance] get_vnf_instances()
 
 get a list of vnf instances
 
@@ -558,10 +558,10 @@ api_instance = ni_mon_client.DefaultApi()
 
 try:
     # get a list of vnf instances
-    api_response = api_instance.get_vnf_instance_list()
+    api_response = api_instance.get_vnf_instances()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_vnf_instance_list: %s\n" % e)
+    print("Exception when calling DefaultApi->get_vnf_instances: %s\n" % e)
 ```
 
 ### Parameters
