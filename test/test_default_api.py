@@ -71,8 +71,8 @@ class TestDefaultApi(unittest.TestCase):
         """
         pass
 
-    def test_get_node_list(self):
-        """Test case for get_node_list
+    def test_get_nodes(self):
+        """Test case for get_nodes
 
         get a list of nodes  # noqa: E501
         """

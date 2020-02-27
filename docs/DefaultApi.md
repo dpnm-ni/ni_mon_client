@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**get_measurement**](DefaultApi.md#get_measurement) | **GET** /vnfinstances/{id}/{measurement_type} | get measurement value
 [**get_measurement_types**](DefaultApi.md#get_measurement_types) | **GET** /measurement_types/{id} | get a list of measurements of a vnf instance
 [**get_node**](DefaultApi.md#get_node) | **GET** /nodes/{name} | get detailed information of a node
-[**get_node_list**](DefaultApi.md#get_node_list) | **GET** /nodes | get a list of nodes
+[**get_nodes**](DefaultApi.md#get_nodes) | **GET** /nodes | get a list of nodes
 [**get_topology**](DefaultApi.md#get_topology) | **GET** /topology | get topology
 [**get_vnf_flavor**](DefaultApi.md#get_vnf_flavor) | **GET** /vnfflavors/{id} | get detailed information of a vnfflavor
 [**get_vnf_flavor_list**](DefaultApi.md#get_vnf_flavor_list) | **GET** /vnfflavors | get a list of vnfflavors
@@ -310,8 +310,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_node_list**
-> list[Node] get_node_list()
+# **get_nodes**
+> list[Node] get_nodes()
 
 get a list of nodes
 
@@ -330,10 +330,10 @@ api_instance = ni_mon_client.DefaultApi()
 
 try:
     # get a list of nodes
-    api_response = api_instance.get_node_list()
+    api_response = api_instance.get_nodes()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DefaultApi->get_node_list: %s\n" % e)
+    print("Exception when calling DefaultApi->get_nodes: %s\n" % e)
 ```
 
 ### Parameters

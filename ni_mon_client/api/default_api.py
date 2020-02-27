@@ -627,13 +627,13 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_node_list(self, **kwargs):  # noqa: E501
+    def get_nodes(self, **kwargs):  # noqa: E501
         """get a list of nodes  # noqa: E501
 
         Return a list of nodes   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_node_list(async_req=True)
+        >>> thread = api.get_nodes(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -643,18 +643,18 @@ class DefaultApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_node_list_with_http_info(**kwargs)  # noqa: E501
+            return self.get_nodes_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_node_list_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_nodes_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_node_list_with_http_info(self, **kwargs):  # noqa: E501
+    def get_nodes_with_http_info(self, **kwargs):  # noqa: E501
         """get a list of nodes  # noqa: E501
 
         Return a list of nodes   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_node_list_with_http_info(async_req=True)
+        >>> thread = api.get_nodes_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -674,7 +674,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_node_list" % key
+                    " to method get_nodes" % key
                 )
             params[key] = val
         del params['kwargs']

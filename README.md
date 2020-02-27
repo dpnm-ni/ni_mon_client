@@ -76,7 +76,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**get_measurement**](docs/DefaultApi.md#get_measurement) | **GET** /vnfinstances/{id}/{measurement_type} | get measurement value
 *DefaultApi* | [**get_measurement_types**](docs/DefaultApi.md#get_measurement_types) | **GET** /measurement_types/{id} | get a list of measurements of a vnf instance
 *DefaultApi* | [**get_node**](docs/DefaultApi.md#get_node) | **GET** /nodes/{name} | get detailed information of a node
-*DefaultApi* | [**get_node_list**](docs/DefaultApi.md#get_node_list) | **GET** /nodes | get a list of nodes
+*DefaultApi* | [**get_nodes**](docs/DefaultApi.md#get_nodes) | **GET** /nodes | get a list of nodes
 *DefaultApi* | [**get_topology**](docs/DefaultApi.md#get_topology) | **GET** /topology | get topology
 *DefaultApi* | [**get_vnf_flavor**](docs/DefaultApi.md#get_vnf_flavor) | **GET** /vnfflavors/{id} | get detailed information of a vnfflavor
 *DefaultApi* | [**get_vnf_flavor_list**](docs/DefaultApi.md#get_vnf_flavor_list) | **GET** /vnfflavors | get a list of vnfflavors
