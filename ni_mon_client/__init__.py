@@ -23,7 +23,6 @@ from ni_mon_client.api_client import ApiClient
 from ni_mon_client.configuration import Configuration
 # import models into sdk package
 from ni_mon_client.models.link import Link
-from ni_mon_client.models.measurement_types import MeasurementTypes
 from ni_mon_client.models.monitoring_entry import MonitoringEntry
 from ni_mon_client.models.network_port import NetworkPort
 from ni_mon_client.models.node import Node

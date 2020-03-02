@@ -215,7 +215,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_measurement_types**
-> MeasurementTypes get_measurement_types(id)
+> list[str] get_measurement_types(id)
 
 get a list of measurements of a vnf instance
 
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MeasurementTypes**](MeasurementTypes.md)
+**list[str]**
 
 ### Authorization
 

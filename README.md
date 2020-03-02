@@ -87,7 +87,6 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [Link](docs/Link.md)
- - [MeasurementTypes](docs/MeasurementTypes.md)
  - [MonitoringEntry](docs/MonitoringEntry.md)
  - [NetworkPort](docs/NetworkPort.md)
  - [Node](docs/Node.md)
