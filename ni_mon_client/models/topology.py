@@ -31,68 +31,68 @@ class Topology(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'node_list': 'list[str]',
-        'edge_list': 'list[str]'
+        'nodes': 'list[str]',
+        'edges': 'list[str]'
     }
 
     attribute_map = {
-        'node_list': 'node_list',
-        'edge_list': 'edge_list'
+        'nodes': 'nodes',
+        'edges': 'edges'
     }
 
-    def __init__(self, node_list=None, edge_list=None):  # noqa: E501
+    def __init__(self, nodes=None, edges=None):  # noqa: E501
         """Topology - a model defined in Swagger"""  # noqa: E501
 
-        self._node_list = None
-        self._edge_list = None
+        self._nodes = None
+        self._edges = None
         self.discriminator = None
 
-        if node_list is not None:
-            self.node_list = node_list
-        if edge_list is not None:
-            self.edge_list = edge_list
+        if nodes is not None:
+            self.nodes = nodes
+        if edges is not None:
+            self.edges = edges
 
     @property
-    def node_list(self):
-        """Gets the node_list of this Topology.  # noqa: E501
+    def nodes(self):
+        """Gets the nodes of this Topology.  # noqa: E501
 
 
-        :return: The node_list of this Topology.  # noqa: E501
+        :return: The nodes of this Topology.  # noqa: E501
         :rtype: list[str]
         """
-        return self._node_list
+        return self._nodes
 
-    @node_list.setter
-    def node_list(self, node_list):
-        """Sets the node_list of this Topology.
+    @nodes.setter
+    def nodes(self, nodes):
+        """Sets the nodes of this Topology.
 
 
-        :param node_list: The node_list of this Topology.  # noqa: E501
+        :param nodes: The nodes of this Topology.  # noqa: E501
         :type: list[str]
         """
 
-        self._node_list = node_list
+        self._nodes = nodes
 
     @property
-    def edge_list(self):
-        """Gets the edge_list of this Topology.  # noqa: E501
+    def edges(self):
+        """Gets the edges of this Topology.  # noqa: E501
 
 
-        :return: The edge_list of this Topology.  # noqa: E501
+        :return: The edges of this Topology.  # noqa: E501
         :rtype: list[str]
         """
-        return self._edge_list
+        return self._edges
 
-    @edge_list.setter
-    def edge_list(self, edge_list):
-        """Sets the edge_list of this Topology.
+    @edges.setter
+    def edges(self, edges):
+        """Sets the edges of this Topology.
 
 
-        :param edge_list: The edge_list of this Topology.  # noqa: E501
+        :param edges: The edges of this Topology.  # noqa: E501
         :type: list[str]
         """
 
-        self._edge_list = edge_list
+        self._edges = edges
 
     def to_dict(self):
         """Returns the model properties as a dict"""
