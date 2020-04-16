@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **port_id** | **str** |  | [optional] 
+**port_name** | **str** |  | [optional] 
 **network_id** | **str** |  | [optional] 
 **ip_addresses** | **list[str]** |  | [optional] 
 

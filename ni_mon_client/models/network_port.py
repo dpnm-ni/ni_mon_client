@@ -32,26 +32,31 @@ class NetworkPort(object):
     """
     swagger_types = {
         'port_id': 'str',
+        'port_name': 'str',
         'network_id': 'str',
         'ip_addresses': 'list[str]'
     }
 
     attribute_map = {
         'port_id': 'port_id',
+        'port_name': 'port_name',
         'network_id': 'network_id',
         'ip_addresses': 'ip_addresses'
     }
 
-    def __init__(self, port_id=None, network_id=None, ip_addresses=None):  # noqa: E501
+    def __init__(self, port_id=None, port_name=None, network_id=None, ip_addresses=None):  # noqa: E501
         """NetworkPort - a model defined in Swagger"""  # noqa: E501
 
         self._port_id = None
+        self._port_name = None
         self._network_id = None
         self._ip_addresses = None
         self.discriminator = None
 
         if port_id is not None:
             self.port_id = port_id
+        if port_name is not None:
+            self.port_name = port_name
         if network_id is not None:
             self.network_id = network_id
         if ip_addresses is not None:
@@ -77,6 +82,27 @@ class NetworkPort(object):
         """
 
         self._port_id = port_id
+
+    @property
+    def port_name(self):
+        """Gets the port_name of this NetworkPort.  # noqa: E501
+
+
+        :return: The port_name of this NetworkPort.  # noqa: E501
+        :rtype: str
+        """
+        return self._port_name
+
+    @port_name.setter
+    def port_name(self, port_name):
+        """Sets the port_name of this NetworkPort.
+
+
+        :param port_name: The port_name of this NetworkPort.  # noqa: E501
+        :type: str
+        """
+
+        self._port_name = port_name
 
     @property
     def network_id(self):
