@@ -3,7 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
+**type** | **str** |  | [optional] 
 **ip** | **str** |  | [optional] 
 **n_cores** | **int** |  | [optional] 
 **core_freq_mhz** | **int** |  | [optional] 

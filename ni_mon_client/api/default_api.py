@@ -128,47 +128,47 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_link_between_nodes(self, node1_name, node2_name, **kwargs):  # noqa: E501
+    def get_link_between_nodes(self, node1_id, node2_id, **kwargs):  # noqa: E501
         """get detailed information of a link between two specific nodes  # noqa: E501
 
         Return detailed information of a link between two specific nodes.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_link_between_nodes(node1_name, node2_name, async_req=True)
+        >>> thread = api.get_link_between_nodes(node1_id, node2_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str node1_name: The name of the first node in the link (required)
-        :param str node2_name: The name of the second node in the link (required)
+        :param str node1_id: The id of the first node in the link (required)
+        :param str node2_id: The id of the second node in the link (required)
         :return: Link
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_link_between_nodes_with_http_info(node1_name, node2_name, **kwargs)  # noqa: E501
+            return self.get_link_between_nodes_with_http_info(node1_id, node2_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_link_between_nodes_with_http_info(node1_name, node2_name, **kwargs)  # noqa: E501
+            (data) = self.get_link_between_nodes_with_http_info(node1_id, node2_id, **kwargs)  # noqa: E501
             return data
 
-    def get_link_between_nodes_with_http_info(self, node1_name, node2_name, **kwargs):  # noqa: E501
+    def get_link_between_nodes_with_http_info(self, node1_id, node2_id, **kwargs):  # noqa: E501
         """get detailed information of a link between two specific nodes  # noqa: E501
 
         Return detailed information of a link between two specific nodes.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_link_between_nodes_with_http_info(node1_name, node2_name, async_req=True)
+        >>> thread = api.get_link_between_nodes_with_http_info(node1_id, node2_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str node1_name: The name of the first node in the link (required)
-        :param str node2_name: The name of the second node in the link (required)
+        :param str node1_id: The id of the first node in the link (required)
+        :param str node2_id: The id of the second node in the link (required)
         :return: Link
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['node1_name', 'node2_name']  # noqa: E501
+        all_params = ['node1_id', 'node2_id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -183,24 +183,24 @@ class DefaultApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'node1_name' is set
-        if ('node1_name' not in params or
-                params['node1_name'] is None):
-            raise ValueError("Missing the required parameter `node1_name` when calling `get_link_between_nodes`")  # noqa: E501
-        # verify the required parameter 'node2_name' is set
-        if ('node2_name' not in params or
-                params['node2_name'] is None):
-            raise ValueError("Missing the required parameter `node2_name` when calling `get_link_between_nodes`")  # noqa: E501
+        # verify the required parameter 'node1_id' is set
+        if ('node1_id' not in params or
+                params['node1_id'] is None):
+            raise ValueError("Missing the required parameter `node1_id` when calling `get_link_between_nodes`")  # noqa: E501
+        # verify the required parameter 'node2_id' is set
+        if ('node2_id' not in params or
+                params['node2_id'] is None):
+            raise ValueError("Missing the required parameter `node2_id` when calling `get_link_between_nodes`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
 
         query_params = []
-        if 'node1_name' in params:
-            query_params.append(('node1_name', params['node1_name']))  # noqa: E501
-        if 'node2_name' in params:
-            query_params.append(('node2_name', params['node2_name']))  # noqa: E501
+        if 'node1_id' in params:
+            query_params.append(('node1_id', params['node1_id']))  # noqa: E501
+        if 'node2_id' in params:
+            query_params.append(('node2_id', params['node2_id']))  # noqa: E501
 
         header_params = {}
 
@@ -532,45 +532,45 @@ class DefaultApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_node(self, name, **kwargs):  # noqa: E501
+    def get_node(self, id, **kwargs):  # noqa: E501
         """get detailed information of a node  # noqa: E501
 
         Return detailed information of a node   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_node(name, async_req=True)
+        >>> thread = api.get_node(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str name: The name of the node (required)
+        :param str id: The id of the node (required)
         :return: Node
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_node_with_http_info(name, **kwargs)  # noqa: E501
+            return self.get_node_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_node_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.get_node_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def get_node_with_http_info(self, name, **kwargs):  # noqa: E501
+    def get_node_with_http_info(self, id, **kwargs):  # noqa: E501
         """get detailed information of a node  # noqa: E501
 
         Return detailed information of a node   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_node_with_http_info(name, async_req=True)
+        >>> thread = api.get_node_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str name: The name of the node (required)
+        :param str id: The id of the node (required)
         :return: Node
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['name']  # noqa: E501
+        all_params = ['id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -585,16 +585,16 @@ class DefaultApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'name' is set
-        if ('name' not in params or
-                params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `get_node`")  # noqa: E501
+        # verify the required parameter 'id' is set
+        if ('id' not in params or
+                params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `get_node`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'name' in params:
-            path_params['name'] = params['name']  # noqa: E501
+        if 'id' in params:
+            path_params['id'] = params['id']  # noqa: E501
 
         query_params = []
 
@@ -612,7 +612,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/nodes/{name}', 'GET',
+            '/nodes/{id}', 'GET',
             path_params,
             query_params,
             header_params,

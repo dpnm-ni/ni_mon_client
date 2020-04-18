@@ -32,25 +32,25 @@ class Topology(object):
     """
     swagger_types = {
         'nodes': 'list[str]',
-        'edges': 'list[str]'
+        'links': 'list[str]'
     }
 
     attribute_map = {
         'nodes': 'nodes',
-        'edges': 'edges'
+        'links': 'links'
     }
 
-    def __init__(self, nodes=None, edges=None):  # noqa: E501
+    def __init__(self, nodes=None, links=None):  # noqa: E501
         """Topology - a model defined in Swagger"""  # noqa: E501
 
         self._nodes = None
-        self._edges = None
+        self._links = None
         self.discriminator = None
 
         if nodes is not None:
             self.nodes = nodes
-        if edges is not None:
-            self.edges = edges
+        if links is not None:
+            self.links = links
 
     @property
     def nodes(self):
@@ -74,25 +74,25 @@ class Topology(object):
         self._nodes = nodes
 
     @property
-    def edges(self):
-        """Gets the edges of this Topology.  # noqa: E501
+    def links(self):
+        """Gets the links of this Topology.  # noqa: E501
 
 
-        :return: The edges of this Topology.  # noqa: E501
+        :return: The links of this Topology.  # noqa: E501
         :rtype: list[str]
         """
-        return self._edges
+        return self._links
 
-    @edges.setter
-    def edges(self, edges):
-        """Sets the edges of this Topology.
+    @links.setter
+    def links(self, links):
+        """Sets the links of this Topology.
 
 
-        :param edges: The edges of this Topology.  # noqa: E501
+        :param links: The links of this Topology.  # noqa: E501
         :type: list[str]
         """
 
-        self._edges = edges
+        self._links = links
 
     def to_dict(self):
         """Returns the model properties as a dict"""

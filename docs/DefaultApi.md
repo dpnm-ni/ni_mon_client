@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**get_links**](DefaultApi.md#get_links) | **GET** /links | get list of link
 [**get_measurement**](DefaultApi.md#get_measurement) | **GET** /vnfinstances/{id}/{measurement_type} | get measurement value
 [**get_measurement_types**](DefaultApi.md#get_measurement_types) | **GET** /measurement_types/{id} | get a list of measurements of a vnf instance
-[**get_node**](DefaultApi.md#get_node) | **GET** /nodes/{name} | get detailed information of a node
+[**get_node**](DefaultApi.md#get_node) | **GET** /nodes/{id} | get detailed information of a node
 [**get_nodes**](DefaultApi.md#get_nodes) | **GET** /nodes | get a list of nodes
 [**get_topology**](DefaultApi.md#get_topology) | **GET** /topology | get topology
 [**get_vnf_flavor**](DefaultApi.md#get_vnf_flavor) | **GET** /vnfflavors/{id} | get detailed information of a vnfflavor
@@ -67,7 +67,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_link_between_nodes**
-> Link get_link_between_nodes(node1_name, node2_name)
+> Link get_link_between_nodes(node1_id, node2_id)
 
 get detailed information of a link between two specific nodes
 
@@ -83,12 +83,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = ni_mon_client.DefaultApi()
-node1_name = 'node1_name_example' # str | The name of the first node in the link
-node2_name = 'node2_name_example' # str | The name of the second node in the link
+node1_id = 'node1_id_example' # str | The id of the first node in the link
+node2_id = 'node2_id_example' # str | The id of the second node in the link
 
 try:
     # get detailed information of a link between two specific nodes
-    api_response = api_instance.get_link_between_nodes(node1_name, node2_name)
+    api_response = api_instance.get_link_between_nodes(node1_id, node2_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->get_link_between_nodes: %s\n" % e)
@@ -98,8 +98,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **node1_name** | **str**| The name of the first node in the link | 
- **node2_name** | **str**| The name of the second node in the link | 
+ **node1_id** | **str**| The id of the first node in the link | 
+ **node2_id** | **str**| The id of the second node in the link | 
 
 ### Return type
 
@@ -263,7 +263,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_node**
-> Node get_node(name)
+> Node get_node(id)
 
 get detailed information of a node
 
@@ -279,11 +279,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = ni_mon_client.DefaultApi()
-name = 'name_example' # str | The name of the node
+id = 'id_example' # str | The id of the node
 
 try:
     # get detailed information of a node
-    api_response = api_instance.get_node(name)
+    api_response = api_instance.get_node(id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->get_node: %s\n" % e)
@@ -293,7 +293,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **str**| The name of the node | 
+ **id** | **str**| The id of the node | 
 
 ### Return type
 

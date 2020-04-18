@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** |  | [optional] 
-**node1_name** | **str** |  | [optional] 
-**node2_name** | **str** |  | [optional] 
+**node1_id** | **str** |  | [optional] 
+**node2_id** | **str** |  | [optional] 
 **delay_us** | **int** |  | [optional] 
 **max_bw_mbps** | **int** |  | [optional] 
 
