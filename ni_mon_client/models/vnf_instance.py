@@ -35,7 +35,7 @@ class VNFInstance(object):
         'name': 'str',
         'status': 'str',
         'flavor_id': 'str',
-        'node_name': 'str',
+        'node_id': 'str',
         'ports': 'list[NetworkPort]'
     }
 
@@ -44,18 +44,18 @@ class VNFInstance(object):
         'name': 'name',
         'status': 'status',
         'flavor_id': 'flavor_id',
-        'node_name': 'node_name',
+        'node_id': 'node_id',
         'ports': 'ports'
     }
 
-    def __init__(self, id=None, name=None, status=None, flavor_id=None, node_name=None, ports=None):  # noqa: E501
+    def __init__(self, id=None, name=None, status=None, flavor_id=None, node_id=None, ports=None):  # noqa: E501
         """VNFInstance - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
         self._name = None
         self._status = None
         self._flavor_id = None
-        self._node_name = None
+        self._node_id = None
         self._ports = None
         self.discriminator = None
 
@@ -67,8 +67,8 @@ class VNFInstance(object):
             self.status = status
         if flavor_id is not None:
             self.flavor_id = flavor_id
-        if node_name is not None:
-            self.node_name = node_name
+        if node_id is not None:
+            self.node_id = node_id
         if ports is not None:
             self.ports = ports
 
@@ -159,25 +159,25 @@ class VNFInstance(object):
         self._flavor_id = flavor_id
 
     @property
-    def node_name(self):
-        """Gets the node_name of this VNFInstance.  # noqa: E501
+    def node_id(self):
+        """Gets the node_id of this VNFInstance.  # noqa: E501
 
 
-        :return: The node_name of this VNFInstance.  # noqa: E501
+        :return: The node_id of this VNFInstance.  # noqa: E501
         :rtype: str
         """
-        return self._node_name
+        return self._node_id
 
-    @node_name.setter
-    def node_name(self, node_name):
-        """Sets the node_name of this VNFInstance.
+    @node_id.setter
+    def node_id(self, node_id):
+        """Sets the node_id of this VNFInstance.
 
 
-        :param node_name: The node_name of this VNFInstance.  # noqa: E501
+        :param node_id: The node_id of this VNFInstance.  # noqa: E501
         :type: str
         """
 
-        self._node_name = node_name
+        self._node_id = node_id
 
     @property
     def ports(self):
